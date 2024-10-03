@@ -1,23 +1,11 @@
-# python_projects_grocery_webapp
-In this python project, we will build a grocery store management application. It will be 3 tier application,
-1. Front end: UI is written in HTML/CSS/Javascript/Bootstrap
-2. Backend: Python and Flask
-3. Database: mysql
+Expense Tracker Overview The Expense Tracker is a simple command-line application that allows users to manage their expenses efficiently. Users can add, view, and save their expenses, which are stored in a JSON file for persistent storage.
 
-![](homepage.JPG)
+Features Add Expense: Users can enter the date, category, and amount for each expense. View Expenses: Users can view a list of all recorded expenses. Persistent Storage: Expenses are saved to a JSON file, allowing data to persist across sessions. Input Validation: Ensures the date is in the correct format (YYYY-MM-DD) and that the amount is a positive number.
 
-### Installation Instructions
+Technologies Used Python:
+The primary programming language used to develop the expense tracker application. Python's simplicity and readability make it a great choice for such projects.
+JSON: A lightweight data interchange format used for storing and retrieving expenses. The expenses are saved in a expenses.json file, making it easy to manage data in a structured format.
+Command-Line Interface (CLI): The application is operated through a command-line interface, allowing users to interact with the program via text inputs and outputs.
 
-Download mysql for windows: https://dev.mysql.com/downloads/installer/
-
-`pip install mysql-connector-python`
-
-### Exercise 
-
-The grocery management system that we built is functional but after we give it to users for use, we got following feedback. The exercise for you to address this feedback and implement these features in the application,
-1. **Products Module**: In products page that lists current products, add an edit button next to delete button that allows to edit current product
-2. **Products Module**: Implement a new form that allows you to add new UOM in the application. For example you want to add **Cubic Meter** as a new UOM as the grocery store decided to start selling **wood** as well. This requies changing backend (python server) and front end (UI) both.
-3. **Orders Module**: When you place an order it doesn't have any validation. For example one can enter an order with empty customer name. You need to add validation for customer name and invalid item name or not specifying a quantity etc. This is only front end UI work.
-4. **Orders Module**: In new order page there is a bug. When you manually change total price of an item it doesn't change the grand total. You need to fix this issue.
-5. **Orders Module**: In the grid where orders are listed, add a view button in the last column. On clicking this button it should show you order details where individual items in that order are listed along with their price/quantity etc.
+Key Libraries/Modules json Module: A built-in Python module used to parse JSON data for saving and loading expenses.
 
